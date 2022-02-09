@@ -7,19 +7,19 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Age', 'Weight'],
-          [ 8,      12],
-          [ 4,      5.5],
-          [ 11,     14],
-          [ 4,      5],
-          [ 3,      3.5],
-          [ 6.5,    7]
+          ['Age', 'Heart Rate'],
+          [ 25,      195],
+          [ 35,      190],
+          [ 45,      170],
+          [ 55,      170],
+          [ 65,      155],
+          [ 75,      150]
         ]);
-
+ 
         var options = {
-          title: 'Age vs. Weight comparison',
-          hAxis: {title: 'Age', minValue: 0, maxValue: 15},
-          vAxis: {title: 'Weight', minValue: 0, maxValue: 15},
+          title: 'Age / Heart Rate comparison',
+          hAxis: {title: 'Age', minValue: 0, maxValue: 200},
+          vAxis: {title: 'Heart Rate', minValue: 0, maxValue: 200},
           legend: 'none'
         };
 
